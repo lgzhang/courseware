@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <manifest xmlns="" identifier="ID0001" version="1.0">
+	 <metadata>
+    <title>复合文档</title>
+    <version>1.0</version>
+  </metadata>
+  <organizations default="ORG-ID0001">
+    <organization identifier="ORG-ID0001">
+      <contents default="CT-ID0001">
+        <content identifier="CT-ID0001" metadata="public/CW1/metadata.xml">
+          <title>标准内容单元</title>
+          <version>1.0</version>
+          <items identifier="IT-01">
+            <title>标准内容要素</title>
+            <version>1.0</version>
+            <item identifier="T-01" identifierref="S01" metadata="public/CW1/imgItems/metadata.xml">
+              <title>要素信息-图片</title>
+              <version>1.0</version>
+            </item>
+            <item identifier="T-02" identifierref="S02" metadata="public/CW1/videoItems/metadata.xml">
+              <title>要素信息-视频</title>
+              <version>1.0</version>
+            </item>
+          </items>
+        </content>
+      </contents>
+    </organization>
+
+    <organization identifier="ORG-ID0002">
+      <sub-organization identifierref="ORG-sub-ID0001">
+        <title>课件</title>
+        <version>1.0</version>
+      </sub-organization>
+    </organization>
+  </organizations>
+  
+  <resources>
+    <resource identifier="S01" type="image">
+      <file href="public/CW1/imgItems/demo.png"/>
+    </resource>
+	
+    <resource identifier="S02" type="video">
+      <file href="public/CW1/videoItems/demo.mp4" />
+      <dependency identifierref="dep01" />
+    </resource>
+
+    <resource identifier="ORG-sub-ID0001" type="CW">
+      <file link="public/CW2/imsmaifest.xml" />
+    </resource>
+	
+    <resource identifier="dep01" type="webcontent">
+      <file href="public/js/utils.js" />
+      <file href="public/js/swfobject.js" />
+    </resource>
+	
+  </resources>
+</manifest>
+
