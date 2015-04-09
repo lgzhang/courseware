@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns="" identifier="ID0001" version="1.0">
     <metadata>
-        <title>复合文档</title>
         <version>1.0</version>
     </metadata>
 
@@ -9,41 +8,41 @@
         <organization identifier="ORG-ID0001">
 
             <content identifier="CT-ID0001">
+                <title>标准内容单元</title>
                 <metadata>
-                    <title>标准内容单元</title>
                     <version>1.0</version>
                     <location>public/CW1/metadata.xml</location>
                 </metadata>
 
                 <item identifier="IT-01">
+                    <title>标准内容要素</title>
                     <metadata>
-                        <title>标准内容要素</title>
                         <version>1.0</version>
                     </metadata>
                     <item identifier="T-01" identifierref="S01">
+                        <title>要素信息-图片</title>
                         <metadata>
-                            <title>要素信息-图片</title>
                             <version>1.0</version>
                             <location>public/CW1/imgItems/metadata.xml</location>
                         </metadata>
                     </item>
 
                     <item identifier="T-02" identifierref="S02">
+                        <title>要素信息-视频</title>
                         <metadata>
-                            <title>要素信息-视频</title>
                             <version>1.0</version>
                             <location>public/CW1/videoItems/metadata.xml</location>
                         </metadata>
                     </item>
-                    
+
                 </item>
             </content>
         </organization>
 
         <organization identifier="ORG-ID0002">
             <sub-organization identifierref="ORG-sub-ID0001">
+                <title>课件</title>
                 <metadata>
-                    <title>课件</title>
                     <version>1.0</version>
                     <location>public/CW2/metadata.xml</location>
                 </metadata>
